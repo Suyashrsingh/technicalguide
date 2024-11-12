@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Technical Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body.light-pink-bg {
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1.animate-header {
+            margin-top: 20px;
+            font-size: 3rem;
+            color: #c21807;
+            animation: fadeInDown 1s;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 2px solid #c21807;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            animation: fadeInUpRed 1s;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f8c8d8;
+        }
+
+        nav a:hover {
+            background-color: #f1a0b0;
+        }
+
+        @keyframes fadeInUpRed {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="light-pink-bg">
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('ms-word')">MS Word</a></li>
+            <li><a href="#" onclick="showPage('ms-excel')">MS Excel</a></li>
+            <li><a href="#" onclick="showPage('ms-powerpoint')">MS PowerPoint</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+<img src="m.jpeg" alt="MS Word" class="animate-image">
+        <header>
+            <h1 class="animate-header">Technical  Guide</h1>
+<h1 class="animate-header">z.p school satara ,chh. sambhajinagar </h1>
+
+        </header>
+        <section class="cards-container">
+            <div class="card">
+                <h2>PowerPoint</h2>
+                <p>PowerPoint is a presentation program that allows users to create slide shows with multimedia content. It is part of the Microsoft Office suite.</p>
+                <p><strong>मराठीत:</strong> पॉवरपॉईंट हे एक सादरीकरण प्रोग्राम आहे जे वापरकर्त्यांना मल्टीमीडिया सामग्रीसह स्लाइड शो तयार करण्यास अनुमती देते. हे मायक्रोसॉफ्ट ऑफिस सूटचा भाग आहे.</p>
+            </div>
+            <div class="card">
+                <h2>Excel</h2>
+                <p>Excel is a spreadsheet program that lets users organize, format, and calculate data. It is used for business analysis and simple data tracking.</p>
+                <p><strong>मराठीत:</strong> एक्सेल हे स्प्रेडशीट प्रोग्राम आहे जे वापरकर्त्यांना डेटा आयोजित, स्वरूपित आणि गणना करण्यास अनुमती देते. हे व्यवसाय विश्लेषण आणि साध्या डेटा ट्रॅकिंगसाठी वापरले जाते.</p>
+            </div>
+            <div class="card">
+                <h2>Word</h2>
+                <p>Microsoft Word is a word processor that allows users to create professional documents, insert images, and format text.</p>
+                <p><strong>मराठीत:</strong> मायक्रोसॉफ्ट वर्ड हे एक वर्ड प्रोसेसर आहे जे वापरकर्त्यांना व्यावसायिक दस्तऐवज तयार करण्याची, प्रतिमा समाविष्ट करण्याची आणि मजकूर स्वरूपित करण्याची परवानगी देते.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- MS Word Page -->
+    <div id="ms-word" class="page">
+<img src="h33.avif" alt="MS Word" class="animate-image">
+        <header>
+            <h1 class="animate-header">Learn MS Word</h1>
+        </header>
+        <section class="cards-container">
+            <div class="card">
+                <h2>Inserting Images</h2>
+                <p>To insert an image into a Word document, select 'Insert', then 'Pictures', and choose the image.</p>
+                <p><strong>मराठीत:</strong> वर्ड दस्तऐवजामध्ये प्रतिमा समाविष्ट करण्यासाठी 'इन्सर्ट' आणि नंतर 'पिक्चर्स' निवडा व प्रतिमा निवडा.</p>
+            </div>
+            <div class="card">
+                <h2>Image Resizing</h2>
+                <p>To resize an image, select the picture and drag a corner handle.</p>
+                <p><strong>मराठीत:</strong> प्रतिमेचा आकार बदलण्यासाठी, प्रतिमा निवडा आणि कोपऱ्यातील हँडल खेचा.</p>
+            </div>
+            <div class="card">
+                <h2>Compressing Images</h2>
+                <p>Select the image, go to the 'Format' tab, and click 'Compress Pictures'.</p>
+                <p><strong>मराठीत:</strong> प्रतिमा निवडा, 'फॉरमॅट' टॅबवर जा आणि 'कॉम्प्रेस पिक्चर्स' वर क्लिक करा.</p>
+            </div>
+        </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ezeM41vMXDY?si=bdyG119OUZiuA2Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- MS Excel Page -->
+    <div id="ms-excel" class="page">
+<img src="h22.avif" alt="MS Word" class="animate-image">
+        <header>
+            <h1 class="animate-header">Learn MS Excel</h1>
+        </header>
+        <section class="cards-container">
+            <div class="card">
+                <h2>Data Management</h2>
+                <p>Excel uses a grid of cells to organize data. Each cell can contain text, numbers, or formulas.</p>
+                <p><strong>मराठीत:</strong> एक्सेल डेटा आयोजित करण्यासाठी सेलच्या ग्रीडचा वापर करते. प्रत्येक सेलमध्ये मजकूर, संख्या किंवा सूत्रे असू शकतात.</p>
+            </div>
+            <div class="card">
+                <h2>Pivot Tables</h2>
+                <p>Pivot tables help summarize and analyze large datasets effectively.</p>
+                <p><strong>मराठीत:</strong> पिव्होट टेबल्स मोठ्या डेटासेटचे सारांश आणि विश्लेषण करण्यात मदत करतात.</p>
+            </div>
+            <div class="card">
+                <h2>Exporting to SharePoint</h2>
+                <p>Excel allows exporting tables to SharePoint for collaboration.</p>
+                <p><strong>मराठीत:</strong> एक्सेल टेबल्स शेअरपॉइंटवर निर्यात करण्याची परवानगी देते ज्यामुळे सहयोग शक्य होते.</p>
+            </div>
+        </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fcbB0nkDik8?si=7EEJDYVCVa1z4qa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- MS PowerPoint Page -->
+    <div id="ms-powerpoint" class="page">
+<img src="h11.avif" alt="MS Word" class="animate-image">
+        <header>
+            <h1 class="animate-header">Learn MS PowerPoint</h1>
+        </header>
+        <section class="cards-container">
+            <div class="card">
+                <h2>Creating Presentations</h2>
+                <p>PowerPoint helps create slides with text, images, music, and more for engaging presentations.</p>
+                <p><strong>मराठीत:</strong> पॉवरपॉइंट आकर्षक सादरीकरणांसाठी मजकूर, प्रतिमा, संगीत, आणि अधिकसह स्लाइड्स तयार करण्यात मदत करते.</p>
+            </div>
+            <div class="card">
+                <h2>Transitions and Animations</h2>
+                <p>PowerPoint provides various transitions and animations to make slides dynamic.</p>
+                <p><strong>मराठीत:</strong> पॉवरपॉइंट विविध संक्रमण आणि अॅनिमेशन्स प्रदान करते ज्यामुळे स्लाइड्स गतिशील बनतात.</p>
+            </div>
+            <div class="card">
+                <h2>Slide Master</h2>
+                <p>Slide Master helps maintain a consistent look throughout your presentation by editing slide layouts.</p>
+                <p><strong>मराठीत:</strong> स्लाइड मास्टर तुमच्या संपूर्ण सादरीकरणात सुसंगत रूप राखण्यास मदत करते जे स्लाइड लेआउट संपादन करून होते.</p>
+            </div>
+        </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_POWERPOINT_VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <header>
+            <h1 class="animate-header">Contact Us</h1>
+        </header>
+        <section class="cards-container">
+            <div class="card">
+                <p><strong>Phone Number:</strong>9561762643 </p>
+                <p><strong>Email:</strong> vrushalideshamukh1807@gamil.com</p>
+                <p><strong>Email:</strong> harshadadeshamukh717@gamil.com</p>
+                <p><strong>Email:</strong> pranavdhote7@gamil.com</p>
+
+                 <p><strong>Email:</strong> rakhidhamune77@gamil.com</p>
+
+
+
+
+
+                <p><strong>मराठीत:</strong> <br> <strong>फोन नंबर:</strong> 9561762643 <br> <strong>ईमेल:</strong> vrushalideshamukh1807@gmail.com</p>
+                 <p><strong>मराठीत:</strong> <br> <strong>फोन नंबर:</strong> 9096304782 <br> <strong>ईमेल:</strong>harshadadeshamukh717@gamil.com </p>
+<p><strong>मराठीत:</strong> <br> <strong>फोन नंबर:</strong> 9561762643 <br> <strong>ईमेल:</strong> pranavdhote7@gamil.com </p>
+<p><strong>मराठीत:</strong> <br> <strong>फोन नंबर:</strong> 9561762643 <br> <strong>ईमेल:</strong> rakhidhamune77@gamil.com </p>
+
+
+
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
